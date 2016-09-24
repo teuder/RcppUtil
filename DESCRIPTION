@@ -1,0 +1,13 @@
+Package: RcppUtil
+Title: Utility functions for Rcpp
+Version: 0.0.0.9000
+Authors@R: person('Masaki E.', 'Tsuda', email='user@example.com', role=c('aut', 'cre'))
+Description: Utility functions for Rcpp.
+Depends: R (>= 3.2.3)
+License: MIT
+LazyData: true
+Suggests: 
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp
+URL: https://github.com/teuder/RcppUtil
+BugReports: https://github.com/teuder/RcppUtil/issues
