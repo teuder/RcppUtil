@@ -1,0 +1,8 @@
+CXX_STD = CXX11
+PKG_CPPFLAGS = -Wno-c++11-extensions -std=c++11
+PKG_LIBS = 
+
+CFLAGS = -g -Wall -O2 -march=native -mtune=native
+CXXFLAGS = $(CFLAGS)
+CXX1XFLAGS = $(CFLAGS)
+CXX1XSTD = -std=c++14

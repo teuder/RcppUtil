@@ -5,7 +5,12 @@ SaveWorkspace: No
 AlwaysSaveHistory: Default
 
 EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 4
 Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
@@ -13,4 +18,7 @@ StripTrailingWhitespace: Yes
 BuildType: Package
 PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
-PackageRoxygenize: rd,collate,namespace
+PackageBuildArgs: -Wno-c++11-extensions -std=c++11
+PackageBuildBinaryArgs: -Wno-c++11-extensions -std=c++11
+PackageCheckArgs: --no-manual
+PackageRoxygenize: rd,namespace
