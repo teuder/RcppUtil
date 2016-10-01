@@ -25,6 +25,10 @@ sparseMatrixToDataFrame <- function(sm) {
     .Call('RcppUtil_sparseMatrixToDataFrame', PACKAGE = 'RcppUtil', sm)
 }
 
+#' @useDynLib RcppUtil
+#' @importFrom Rcpp evalCpp
+NULL
+
 catdap <- function(y, x) {
     .Call('RcppUtil_catdap', PACKAGE = 'RcppUtil', y, x)
 }

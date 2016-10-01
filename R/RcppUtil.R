@@ -6,8 +6,6 @@
 #' @docType package
 #' @import Rcpp
 #'
-#' @useDynLib RcppUtil
-#' @importFrom Rcpp evalCpp
 
 NULL
 

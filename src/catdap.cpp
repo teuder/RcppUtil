@@ -1,3 +1,6 @@
+//' @useDynLib RcppUtil
+//' @importFrom Rcpp evalCpp
+
 #include <Rcpp.h>
 #include "RcppUtility.h"
 using namespace Rcpp;
@@ -14,8 +17,8 @@ double catdap_base(const T1& y,const T2& x){
     // http://jasp.ism.ac.jp/ism/catdap/
 
     //データ数 n
-    const R_xlen_t n = y.length();
-    if(n!=x.length()) {
+    const R_xlen_t n = y.size();
+    if(n!=x.size()) {
         stop("The length of vectors x and y must be equal.");
     }
     //Rcout << n << "\n";
